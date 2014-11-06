@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/assets/foundation.min.css">
+</head>
+<body>
+  <div ng-app="colabroutes" ng-controller="AppCtrl">
+    <!-- templates -->
+    <script id="searchbar-tpl" type="text/ng-template">
+      <form>
+        <div class="row">
+          <div class="small-12">
+            <div class="row">
+              <div class="small-3 columns">
+                <label for="right-label" class="right inline">Label</label>
+              </div>
+              <div class="small-9 columns">
+                <input type="text" id="right-label" placeholder="Inline Text Input">
+              </div>
+            </div>
+          </div>
+        </div>
+        </form>
+    </script>
+
+    <script id="home-tpl" type="text/ng-template">
+      <search-bar></search-bar>
+    </script>
+
+    <ng-view></ng-view>
+  </div> 
+
+  <script src="/assets/angular.min.js"></script>
+  <script src="/assets/app.js"></script>
+
+</body>
+</html>

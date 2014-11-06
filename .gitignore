@@ -1,0 +1,5 @@
+*.datastore
+*.DS_Store
+*.pyc
+
+
